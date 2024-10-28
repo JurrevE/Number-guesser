@@ -1,0 +1,113 @@
+:root {
+	--pink-light: #ffccff;
+	--pink-dark: #ff99cc;
+	--pink-medium: #ff66b2;
+	--white: #ffffff;
+	--black: #333333;
+}
+
+body {
+	background-color: var(--pink-light);
+	font-family: "Arial", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	height: 100vh;
+}
+
+h1 {
+	color: #ff66b2; /* Text color */
+	text-shadow: -1px -1px 0 var(--white), 1px -1px 0 var(--white),
+		-1px 1px 0 var(--white), 1px 1px 0 var(--white); /* White border effect */
+	margin: 20px 0; /* Add space above and below */
+}
+
+.main {
+	height: 400px;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--pink-dark);
+	border-radius: 12px;
+	padding: 20px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#score {
+	color: #ff66b2; /* Text color */
+	text-shadow: -1px -1px 0 var(--white), 1px -1px 0 var(--white),
+		-1px 1px 0 var(--white), 1px 1px 0 var(--white); /* White border effect */
+	margin: 20px 0; /* Add space above and below */
+}
+#number {
+	height: 100px;
+	width: 300px;
+	border: 2px solid var(--pink-medium);
+	border-radius: 8px;
+	background-color: var(--white);
+	color: var(--black);
+	font-size: 24px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+}
+
+#number:hover {
+	background-color: var(--pink-medium);
+	color: var(--white);
+}
+
+.score {
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--black);
+	margin-top: 10px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 200px;
+}
+
+input[type="text"] {
+	height: 40px;
+	width: 120px;
+	border: 2px solid var(--pink-medium);
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 18px;
+	outline: none;
+	transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+	border-color: var(--pink-dark);
+}
+
+button {
+	background-color: var(--pink-medium);
+	color: var(--white);
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: var(--pink-dark);
+}
+
+button:active {
+	transform: scale(0.95);
+}
